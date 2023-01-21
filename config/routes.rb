@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   root "tasks#index"
   
-  resources :tasks
   devise_for :users
+
+  resources :tasks do 
+    patch "move", on: :member
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   
 end
