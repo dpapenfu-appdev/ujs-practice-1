@@ -28,4 +28,3 @@ class Task < ApplicationRecord
     completed: "completed"
   }
 end
-end
